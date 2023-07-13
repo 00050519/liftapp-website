@@ -1,35 +1,62 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.scss";
+import Navbar from "./components/navBar/Navbar";
+import playstoreLogo from "../src/assets/google-play-badge.png"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="MainContainer">
+      <Navbar />
+      <div className="offerContainer" id="offerSection">
+        <div className="offer-background-image">
+          <h1>
+            Lift, track, <p className="accentText">optimize.</p>
+          </h1>
+          <div className="buttonContainer">
+            <a href="#featuresSection" className="btn btn-light me-3">
+              Features
+            </a>
+            <a href="" className="btn btn-success">
+              Download from Google PlayStore
+            </a>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="featuresContainer" id="featuresSection">
+        <div className="featuresImageSection">
+          <div className="features-Section-Image"></div>
+        </div>
+        <div className="FeaturesTextSection">
+          <h2 className="mb-5">
+            Better, faster, <p className="accentText">stronger: </p>
+          </h2>
+          <p className="fs-4">Log your exercises</p>
+          <p className="fs-4">Share your routines</p>
+          <p className="fs-4">Compete with friends</p>
+          <p className="text-success fs-3">Track your progress</p>
+          <div className="buttonContainer">
+            <a href="#" className="btn btn-success me-3">
+              Download
+            </a>
+            <a href="#aboutSection" className="btn btn-secondary">
+              About the app
+            </a>
+          </div>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <div className="informationSection" id="aboutSection">
+        <div className="about-background-image">
+          <div className="textSection">
+            <h2>Lift App is available on <p className="accentText">Google's PlayStore</p></h2>
+            <img src={playstoreLogo} height={600} width={200}/>
+          </div>
+          <div className="emuladorImg"></div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;

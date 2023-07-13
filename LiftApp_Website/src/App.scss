@@ -1,0 +1,119 @@
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+
+  .offerContainer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .offer-background-image {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-image: url("../src/assets/offerBackground.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        color: white;
+      }
+      .accentText {
+        display: inline;
+        color: red;
+      }
+    }
+  }
+  .featuresContainer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .featuresImageSection {
+      height: 100vh;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+
+      .features-Section-Image {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-image: url("../src/assets/featuresImage4.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .FeaturesTextSection {
+      height: 100vh;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        color: black;
+      }
+      .accentText {
+        display: inline;
+        color: red;
+      }
+    }
+  }
+
+  .informationSection {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .about-background-image{
+      height: 120vh;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      background-image: url("../src/assets/aboutImage.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .textSection{
+        height: 10vh;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+          color: white;
+          text-align: center;
+          box-shadow: 10px;
+        }
+      }
+
+      .emuladorImg{
+        height: 95vh;
+        width: 20%;
+        border-radius: 15px;
+        background-image: url("../src/assets/emulador.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

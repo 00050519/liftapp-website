@@ -117,3 +117,147 @@
     }
   }
 }
+
+
+/* Media query for small screens (e.g., mobile phones) */
+@media screen and (max-width: 767px) {
+  .MainContainer {
+    display: flex;
+    flex-direction: column;
+  
+    .offerContainer {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  
+      .offer-background-image {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url("../src/assets/offerBackground.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        align-items: center;
+        justify-content: center;
+
+        .buttonContainer{
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+          column-gap: 15px;
+        }
+  
+        h1 {
+          color: white;
+        }
+        .accentText {
+          display: inline;
+          color: red;
+        }
+      }
+    }
+    .featuresContainer {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+  
+      .featuresImageSection {
+      
+        display: none;
+        
+  
+        .features-Section-Image {
+          height: 100vh;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          background-image: url("../src/assets/featuresImage4.jpg");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+  
+      .FeaturesTextSection {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  
+        h2 {
+          color: black;
+        }
+        .accentText {
+          display: inline;
+          color: red;
+        }
+      }
+    }
+  
+    .informationSection {
+      height: 260vh;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+  
+      .about-background-image{
+        height: 260vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-image: url("../src/assets/aboutImage.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+  
+        .textSection{
+          height: 40vh;
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          h2{
+            color: white;
+            text-align: center;
+            box-shadow: 10px;
+          }
+        }
+  
+        .emuladorImg{
+          height: 150vh;
+          width: 50%;
+          border-radius: 15px;
+          background-image: url("../src/assets/emulador.jpeg");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
+
+/* Media query for medium screens (e.g., tablets) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .selector {
+    /* Styles specific to medium screens */
+  }
+}
+
+/* Media query for large screens (e.g., desktops) */
+@media screen and (min-width: 1024px) {
+  .selector {
+    /* Styles specific to large screens */
+  }
+}

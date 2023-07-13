@@ -15,10 +15,10 @@ function App() {
             Lift, track, <p className="accentText">optimize.</p>
           </h1>
           <div className="buttonContainer">
-            <a href="#featuresSection" className="btn btn-light me-3">
+            <a href="#featuresSection" className="btn btn-light me-3 mt-3">
               Features
             </a>
-            <a href="" className="btn btn-success">
+            <a href="" className="btn btn-success mt-3">
               Download from Google PlayStore
             </a>
           </div>
@@ -48,11 +48,12 @@ function App() {
       </div>
       <div className="informationSection" id="aboutSection">
         <div className="about-background-image">
-          <div className="textSection">
+          <div className="textSection mt-3">
             <h2>Lift App is available on <p className="accentText">Google's PlayStore</p></h2>
-            <img src={playstoreLogo} height={600} width={200}/>
+            <img src={playstoreLogo} height={600} width={200} className="mb-3"/>
+            <p className="text-white text center">For inquiries contact us at: liftapp@gmail.com</p>
           </div>
-          <div className="emuladorImg"></div>
+          <div className="emuladorImg mt-3"></div>
         </div>
       </div>
     </div>

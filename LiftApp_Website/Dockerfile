@@ -1,6 +1,9 @@
 # Base image
 FROM node:14-alpine
 
+# Install build tools
+RUN apk add --no-cache build-base
+
 # Set the working directory
 WORKDIR /app
 
